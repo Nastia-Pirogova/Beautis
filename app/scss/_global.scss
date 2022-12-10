@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #fff;
+    color: #000;
+    min-width: 320px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    line-height: 1.5;
+
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+button {
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.button {
+    text-transform: uppercase !important;
+}
+
+button:hover {
+    background: rgba(48, 96, 73, 0.5);
+}
+
+// ul.breadcrumb {
+//     display: flex;
+//     margin: 12px 0 0 0;
+//     flex-wrap: wrap;
+// }
+
+li.breadcrumb-header__first,
+li.breadcrumb-header__second,
+li.breadcrumb-header__third,
+li.breadcrumb-product {
+    padding: 0 0 0 4px;
+
+    span {
+        padding: 0 0px 0 14px;
+    }
+
+}
+
+.breadcrumb {
+    padding: 1em 0;
+}
+
+.breadcrumb li {
+    display: inline-block;
+}
+
+.breadcrumb li:after {
+    content: '';
+    padding: 0 0.25em 0 0.5em;
+    color: #000;
+}
+
+.breadcrumb li.last:before,
+.breadcrumb li.last:after {
+    content: ' ';
+}
+
+.title-left {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: $green;
+    margin: 20px 0 0 0;
+}
+
+
+.text-show-more.show-more .more-text {
+    display: inline;
+}
+
+.text-show-more.show-more .dots {
+    display: none;
+}
+
+.fadeout-block {
+    display: block;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+// .text-show-more.show-more {
+//     position: relative;
+// }
+
+.text-show-more {
+    position: relative;
+}
+
+.read-more-btn-open {
+    display: flex;
+    align-items: center;
+}

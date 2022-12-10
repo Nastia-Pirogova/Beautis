@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+<section class="ordering">
+    <div class="container">
+        <div class="ordering__section">
+            <div class="left-section-ordering">
+                <div class="ordering__title">Оформление<br>
+                    заказа
+                    <div class="ordering-registered">
+                        <div class="ordering-registered__btn">Уже зарегистрированы?</div>
+                        <a class="ordering-come__btn">Войти</a>
+                    </div>
+                </div>
+
+                <div class="ordering__box ">
+                    <div class="ordering__box-title-toggle ">
+                        <div class="ordering__box-title ordering__box-title-1 active">
+                            Для
+                            Себя
+                        </div>
+                        <div class="ordering__box-title ordering__box-title-2 ">В подарок</div>
+                        <div class="ordering-registered__button">
+                                <span>Вы уже зарегистрированы.
+                                    Войдите и получите скидку.</span>
+                            <button>Вoйти</button>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent-form-1">
+                        <div class="ordering__box-form">
+                            <form>
+                                <div class="ordering-form-top">
+                                    <div class="  ordering-form-1">
+                                        <input class="ordering-form-name-1 ordering-input" type="text" name=""
+                                               required="">
+                                        <label>Имя</label>
+                                    </div>
+                                    <div class=" ordering-form-1">
+                                        <input class="ordering-form-lastname-1 ordering-input" type="text" name=""
+                                               required="">
+                                        <label>Фамилия</label>
+                                    </div>
+                                </div>
+                                <div class=" ordering-form-1">
+                                    <input class="ordering-form-email-1 ordering-input " type="email" name=""
+                                           required="">
+                                    <label>Email</label>
+                                </div>
+                                <div class=" ordering-form-1">
+                                    <input class="ordering-form-tel-1 ordering-input" type="tel" name=""
+                                           required="">
+                                    <label>Телефон</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent-form-2">
+                        <div class="ordering__box-form">
+                            <div class="ordering__box-purpose-title">Ваши данные</div>
+                            <form>
+                                <div class="ordering-form-top">
+                                    <div class="  ordering-form-1">
+                                        <input class="ordering-form-name-1 ordering-input" type=" text" name=""
+                                               required="">
+                                        <label>Имя</label>
+                                    </div>
+                                    <div class=" ordering-form-1">
+                                        <input class="ordering-form-lastname-1 ordering-input" type="text" name=""
+                                               required="">
+                                        <label>Фамилия</label>
+                                    </div>
+                                </div>
+                                <div class=" ordering-form-1">
+                                    <input class="ordering-form-email-1 ordering-input " type="email" name=""
+                                           required="">
+                                    <label>Email</label>
+                                </div>
+                                <div class=" ordering-form-1">
+                                    <input class="ordering-form-tel-1 ordering-input" type="tel" name=""
+                                           required="">
+                                    <label>Телефон</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ordering__box-form ordering__box-form-2">
+                            <div class="ordering__box-purpose-title">Для кого подарок</div>
+                            <form>
+                                <div class="ordering-form-top">
+                                    <div class="ordering-form-1">
+                                        <input class="ordering-form-name-1 ordering-input" type=" text" name=""
+                                               required="">
+                                        <label>Имя</label>
+                                    </div>
+                                    <div class=" ordering-form-1">
+                                        <input class="ordering-form-lastname-1 ordering-input" type="text" name=""
+                                               required="">
+                                        <label>Фамилия</label>
+                                    </div>
+                                </div>
+                                <div class=" ordering-form-1">
+                                    <input class="ordering-form-tel-1 ordering-input" type="tel" name=""
+                                           required="">
+                                    <label>Телефон</label>
+                                </div>
+                                <label class="ordering-form-packaging" id="#">
+                                    <input type="checkbox">
+                                    <span>Добавить подарочную упаковку</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ordering__box ">
+                    <div class="ordering__box-title-toggle ">
+                        <div class="ordering__box-title ordering__box-title-1 ordering__box-title-1-delivery active">
+                            Доставка
+                        </div>
+                        <div class="ordering__box-title ordering__box-title-pickup ">Самовывоз</div>
+                    </div>
+                    <div class="tabcontent-form-1 tabcontent-form-1-delivery">
+                        <div class="ordering__box-form">
+                            <div>
+                                <div class="ordering-form-1 ordering-form-2">
+                                    <input class="ordering-form-city ordering-input" type="tel" name="" required="">
+                                    <label>Город</label>
+                                    <div class="ordering-form-city-dropdown">
+                                        <div class="">
+                                            <input placeholder="Поиск города" type="text" autocomplete="on"
+                                                   data-test="search-city" tabindex="" class="">
+                                        </div>
+                                    </div>
+                                    <div class="ordering-form-1 ordering-form-2">
+                                        <input class="ordering-form-post-office ordering-input" type="text" name=""
+                                               required="">
+                                        <label>До отделения Новая Почта</label>
+                                        <div class="ordering-form-post-office-dropdown">
+                                            <div class="">
+                                                <input placeholder="Поиск почты" type="text" autocomplete="on"
+                                                       data-test="search-city" tabindex="" class="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ordering-form-1 ordering-form-2">
+                                        <input class="ordering-form-post-office-number ordering-input" type="tel"
+                                               name="" required="">
+                                        <label>Отделение №1, пер. Сагайдачного, 14</label>
+                                        <div class="ordering-form-post-office-number-dropdown">
+                                            <div class="">
+                                                <input placeholder="Поиск отделения" type="text" autocomplete="on"
+                                                       data-test="search-city" tabindex="" class="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabcontent-form-2 tabcontent-form-2-pickup">
+                            <div class="ordering__box-form">
+                                <div>
+                                    <div class="ordering-form-1 ordering-form-2">
+                                        <input class="ordering-form-post-office ordering-input" type="text" name=""
+                                               required="">
+                                        <label>До отделения Новая Почта</label>
+                                        <div class="ordering-form-post-office-dropdown">
+                                            <div class="">
+                                                <input placeholder="Поиск почты" type="text" autocomplete="on"
+                                                       data-test="search-city" tabindex="" class="">
+                                            </div>
+                                        </div>
+
+
+                                        <input class="ordering-form-city ordering-input" type="tel" name="" required="">
+                                        <label>Город</label>
+                                        <div class="ordering-form-city-dropdown">
+                                            <div class="">
+                                                <input placeholder="Поиск города" type="text" autocomplete="on"
+                                                       data-test="search-city" tabindex="" class="">
+                                            </div>
+                                        </div>
+
+
+                                        <input class="ordering-form-street ordering-input" type="tel" name=""
+                                               required="">
+                                        <label>Улица</label>
+                                        <div class="ordering-form-street-dropdown">
+                                            <div class="">
+                                                <input placeholder="Поиск улицы" type="text" autocomplete="on"
+                                                       data-test="search-city" tabindex="" class="">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="ordering-form-address">
+                                            <input placeholder="Дом" type="text" autocomplete="on"
+                                                   data-test="" tabindex="" class="">
+
+                                            <input placeholder="Подъезд" type="text" autocomplete="on"
+                                                   data-test="" tabindex="" class="">
+
+                                            <input placeholder="Этаж" type="text" autocomplete="on"
+                                                   data-test="" tabindex="" class="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ordering__box ">
+                    <div class="ordering__box-title-toggle ">
+                        <div class="ordering__box-title ordering__box-title-1 active">
+                            Оплата
+                        </div>
+                    </div>
+                    <div class="tabcontent-form-1">
+                        <div class="ordering__box-form">
+                            <div>
+                                <div class="ordering-form-1 ordering-form-2">
+
+                                    <div class="ordering-form-card-dropdown">
+                                        <select class="ordering-form-card-type" name="skin_type" id=""
+                                                data-carts-checked="true">
+                                            <option selected="">На карту Приват Банк</option>
+                                            <option value="Liqpay">Liqpay</option>
+                                            <option value="Наложенный платеж">Наложенный платеж</option>
+                                        </select>
+                                    </div>
+                                    <div class="ordering-form-1 ordering-form-2">
+                                        <input class="ordering-form-promo-code ordering-input" type="text" name=""
+                                               required="">
+                                        <label>Промокод</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="ordering__box-buttons">
+                    <button class="ordering__box-btn-back-shop">Вернуться к покупкам</button>
+                    <button class="ordering__box-btn-checkout">Оформить заказ</button>
+                    <label class="ordering-form-packaging ordering-form-dont-call" id="#">
+                        <input type="checkbox">
+                        <span>Не перезванивайте мне</span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="ordering__basket basket__container active">
+                <div class="basket__container-wrapper">
+                    <div class="basket__container-top">
+                        <div class="basket__container-title">КОРЗИНА</div>
+                    </div>
+
+                    <section class="basket__scroll">
+                        <div class="basket__container-free-shopping">
+                            <img class="free-shopping__img" src="img/free-shopping.svg" alt="">
+                            <div class="free-shopping">
+                                <div class="free-shopping__text">Бесплатная доставка<br>
+                                    при заказе от 1500 грн
+                                </div>
+
+                                <div class="free-shopping__value"><span>Еще</span> 200
+                                    <span> ₴
+                                        </span>
+                                </div>
+                                <div class="free-shopping__progress-line"><span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="basket__container-products">
+                            <li class="product-list__product-item">
+                                <div class="product__box">
+                                    <img class="product__box-img" src="img/product__box-img-1.png" alt="">
+                                    <div class="product__box-info">
+                                        <div class="product__info-title">Молочко
+                                            для волос Davines OI All In One
+                                            Milk
+                                        </div>
+                                        <div class="product__info-price">
+                                            <div class="product__info-price-item">
+                                                <button type="button" class="minus minus-btn">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                                stroke="black" stroke-width="1.5"
+                                                                stroke-miterlimit="10"></path>
+                                                        <path d="M6.75 12H17.25" stroke="black" stroke-width="1.5"
+                                                              stroke-miterlimit="10"></path>
+                                                    </svg>
+                                                </button>
+
+                                                <input type="text" id="price-from" name="" value="1" data-min="1"
+                                                       data-id="price-from" data-label="" class="input">
+
+                                                <button type="button" class="plus plus-btn">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                                stroke="black" stroke-width="1.5"
+                                                                stroke-miterlimit="10">
+                                                        </path>
+                                                        <path d="M6.75 12H17.25" stroke="black" stroke-width="1.5"
+                                                              stroke-miterlimit="10">
+                                                        </path>
+                                                        <path d="M12.0005 6.75049L12.0005 17.2505" stroke="black"
+                                                              stroke-width="1.5" stroke-miterlimit="10">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="product__info-price-value">
+                                                378 <span>₴</span>
+                                            </div>
+                                            <div class="product__box-cross">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__product-item">
+                                <div class="product__box-none">
+                                    <div class="product__box-none-title">Товар
+                                        Удален
+                                        <div class="product__info-title">
+                                            Кондиционер для волос Davines Oi
+                                            Conditioner
+                                        </div>
+                                    </div>
+                                    <button class="return-to-cart">Вернуть в
+                                        корзину
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="product-list__product-item">
+                                <div class="product__box">
+                                    <img class="product__box-img" src="img/product__box-img-2.png" alt="">
+                                    <div class="product__box-info">
+                                        <div class="product__info-title">Масло
+                                            для волос Davines OI Oil
+                                            Absolute Beautifying Potion
+                                        </div>
+                                        <div class="product__info-price">
+                                            <div class="product__info-price-item">
+                                                <button type="button" class="minus minus-btn">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                                stroke="black" stroke-width="1.5"
+                                                                stroke-miterlimit="10"></path>
+                                                        <path d="M6.75 12H17.25" stroke="black" stroke-width="1.5"
+                                                              stroke-miterlimit="10"></path>
+                                                    </svg>
+                                                </button>
+
+                                                <input type="text" id="price-from" name="" value="1" data-min="1"
+                                                       data-id="price-from" data-label="" class="input">
+                                                <button type="button" class="plus plus-btn">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                                stroke="black" stroke-width="1.5"
+                                                                stroke-miterlimit="10">
+                                                        </path>
+                                                        <path d="M6.75 12H17.25" stroke="black" stroke-width="1.5"
+                                                              stroke-miterlimit="10">
+                                                        </path>
+                                                        <path d="M12.0005 6.75049L12.0005 17.2505" stroke="black"
+                                                              stroke-width="1.5" stroke-miterlimit="10">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="product__info-price-value">
+                                                583 <span>₴</span>
+                                            </div>
+                                            <div class="product__box-cross">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="product-list__product-item">
+                                <div class="product__box">
+                                    <img class="product__box-img" src="img/product__box-img-1.png" alt="">
+                                    <div class="product__box-info">
+                                        <div class="product__info-title">Молочко
+                                            для волос Davines OI All In One
+                                            Milk
+                                        </div>
+                                        <div class="product__info-price">
+                                            <div class="product__info-price-item">
+                                                <button type="button" class="minus minus-btn">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                                stroke="black" stroke-width="1.5"
+                                                                stroke-miterlimit="10"></path>
+                                                        <path d="M6.75 12H17.25" stroke="black" stroke-width="1.5"
+                                                              stroke-miterlimit="10"></path>
+                                                    </svg>
+                                                </button>
+
+                                                <input type="text" id="price-from" name="" value="1" data-min="1"
+                                                       data-id="price-from" data-label="" class="input">
+
+                                                <button type="button" class="plus plus-btn">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                                stroke="black" stroke-width="1.5"
+                                                                stroke-miterlimit="10">
+                                                        </path>
+                                                        <path d="M6.75 12H17.25" stroke="black" stroke-width="1.5"
+                                                              stroke-miterlimit="10">
+                                                        </path>
+                                                        <path d="M12.0005 6.75049L12.0005 17.2505" stroke="black"
+                                                              stroke-width="1.5" stroke-miterlimit="10">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="product__info-price-value">
+                                                378 <span>₴</span>
+                                            </div>
+                                            <div class="product__box-cross">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="product-list__product-item">
+                                <div class="product__box-none">
+                                    <div class="product__box-none-title">Товар
+                                        Удален
+                                        <div class="product__info-title">
+                                            Кондиционер для волос Davines Oi
+                                            Conditioner
+                                        </div>
+                                    </div>
+                                    <button class="return-to-cart">Вернуть в
+                                        корзину
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="product-list__product-item">
+                                <div class="product__box">
+                                    <img class="product__box-img" src="img/product__box-img-2.png" alt="">
+                                    <div class="product__box-info">
+                                        <div class="product__info-title">Масло
+                                            для волос Davines OI Oil
+                                            Absolute Beautifying Potion
+                                        </div>
+                                        <div class="product__info-price">
+                                            <div class="product__info-price-item">
+                                                <button type="button" class="minus minus-btn">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                                stroke="black" stroke-width="1.5"
+                                                                stroke-miterlimit="10"></path>
+                                                        <path d="M6.75 12H17.25" stroke="black" stroke-width="1.5"
+                                                              stroke-miterlimit="10"></path>
+                                                    </svg>
+                                                </button>
+
+                                                <input type="text" id="price-from" name="" value="1" data-min="1"
+                                                       data-id="price-from" data-label="" class="input">
+
+                                                <button type="button" class="plus plus-btn">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                                stroke="black" stroke-width="1.5"
+                                                                stroke-miterlimit="10">
+                                                        </path>
+                                                        <path d="M6.75 12H17.25" stroke="black" stroke-width="1.5"
+                                                              stroke-miterlimit="10">
+                                                        </path>
+                                                        <path d="M12.0005 6.75049L12.0005 17.2505" stroke="black"
+                                                              stroke-width="1.5" stroke-miterlimit="10">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="product__info-price-value">
+                                                583 <span>₴</span>
+                                            </div>
+                                            <div class="product__box-cross">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+
+                    <div class="basket__container-bottom">
+                        <div class="basket__container-total">
+                            <div class="basket__container-total-title">ИТОГО</div>
+                            <div class="basket__container-total-value">1 327 <span>₴</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="js/libs.min.js "></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.min.js "></script>
+<script src="js/main.js "></script>
+</body>
+
+</html>
