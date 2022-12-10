@@ -1,15 +1,15 @@
-// for (var i = 1; i < 6; i++) {
-//     document.querySelector('.menu-list__item-' + i).addEventListener('click', (event) => {
-//         menuIndex = event.srcElement.parentElement.classList[1].replace(/^\D+/g, '');
-//         for (var ii = 1; ii < 6; ii++) {
-//             if (ii.toString() === menuIndex)
-//                 document.querySelector('.dropdown-list__' + menuIndex).classList.toggle('active')
-//             continue;
-//             document.querySelector('.dropdown-list__' + ii).classList.remove('active')
-//
-//         }
-//     });
-// }
+for (var i = 1; i < 6; i++) {
+    document.querySelector('.menu-list__item-' + i).addEventListener('click', (event) => {
+        menuIndex = event.srcElement.parentElement.classList[1].replace(/^\D+/g, '');
+        for (var ii = 1; ii < 6; ii++) {
+            if (ii.toString() === menuIndex)
+                document.querySelector('.dropdown-list__' + menuIndex).classList.toggle('active')
+            continue;
+            document.querySelector('.dropdown-list__' + ii).classList.remove('active')
+
+        }
+    });
+}
 
 
 $(function () {
@@ -341,29 +341,3 @@ $(function () {
 
 
 })
-
-// const readMoreBtn = document.querySelector(".read-more-btn");
-// const text = document.querySelector(".text-show-more");
-//
-// readMoreBtn.addEventListener("click", (e) => {
-//     text.classList.toggle("show-more");
-//     if (readMoreBtn.innerText === "ПОКАЗАТЬ БОЛЬШЕ") {
-//         readMoreBtn.innerText = "СКРЫТЬ";
-//     } else {
-//         readMoreBtn.innerText = "ПОКАЗАТЬ БОЛЬШЕ";
-//     }
-// });
-//
-//
-// const reviewsReadMoreBtn = document.querySelector(".reviews__read-more-btn");
-// const reviewsText = document.querySelector(".reviews__text-show-more");
-//
-// reviewsReadMoreBtn.addEventListener("click", (e) => {
-//     reviewsText.classList.toggle("reviews__show-more");
-//     if (reviewsReadMoreBtn.innerText === "ПОКАЗАТЬ БОЛЬШЕ") {
-//         reviewsReadMoreBtn.innerText = "СКРЫТЬ";
-//     } else {
-//         reviewsReadMoreBtn.innerText = "ПОКАЗАТЬ БОЛЬШЕ";
-//     }
-// });
-//
