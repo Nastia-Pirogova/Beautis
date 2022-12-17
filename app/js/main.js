@@ -1,19 +1,17 @@
-for (var i = 1; i < 6; i++) {
+for (let i = 1; i < 6; i++) {
     document.querySelector('.menu-list__item-' + i).addEventListener('click', (event) => {
-        menuIndex = event.srcElement.parentElement.classList[1].replace(/^\D+/g, '');
-        for (var ii = 1; ii < 6; ii++) {
+        let menuIndex = event.event.target.parentElement.classList[1].replace(/^\D+/g, '');
+        for (let ii = 1; ii < 6; ii++) {
             if (ii.toString() === menuIndex)
                 document.querySelector('.dropdown-list__' + menuIndex).classList.toggle('active')
             continue;
             document.querySelector('.dropdown-list__' + ii).classList.remove('active')
-
         }
     });
 }
 
 
 $(function () {
-
 
     $(function () {
 
@@ -44,13 +42,11 @@ $(function () {
     });
 
 
-
     $(function () {
         $('.btn__media-close').on('click', function () {
             $('.dropdown-list__media').removeClass('active');
         });
     });
-
 
 
     $(function () {
@@ -84,7 +80,6 @@ $(function () {
             $('.contacts__list-callback').toggleClass('close');
         });
     });
-
 
 
     $('.slider').not('.slick-initialized').slick({
